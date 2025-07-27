@@ -1,0 +1,40 @@
+.shape1,.shape2,.shape3{
+    display: inline-block;
+    background-color: #b1afaf;
+    font-size: 16px;
+    outline: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.shape1{
+    border: 5px solid red;
+}
+.shape2{
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green;
+}
+.shape3{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+}
+
+.note1,.note2{
+    background-color: #EEE;
+    border-left: 5px;
+    border-left-style: solid;
+    padding: 10px;
+    outline: 10px solid #EEE;
+}
+
+.note1{
+    border-left-color: purple;
+    margin: 10px;
+}
+.note2{
+    border-left-color: rgb(75, 158, 158);
+    margin-left: 10px;
+    margin-top: 40px;
+
+}

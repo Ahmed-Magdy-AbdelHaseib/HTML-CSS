@@ -1,0 +1,46 @@
+/* 
+    Text colour
+        - background-color
+        - color
+    Text shadow
+        -syntax => text-shadow: H-shadow V-shadow Blur color
+    Text Alignment
+        - Alignment
+            =Syntax -> text-aling: right,left or center
+        - Direction
+        - Vertical Alignment
+    
+    Text Decoration
+    Text Transforation
+*/
+
+div {
+    background-color: #f9f9f9;
+    /* color: rebeccapurple; */
+    text-shadow: 0 0 0 red;
+    /* text-align: center;
+    direction: rtl;
+    text-decoration: overline;
+    text-transform: uppercase; */
+
+}
+img{
+    vertical-align: top;
+}
+/* 
+    text spacing
+        Letter spacing
+        Identation
+        line Height
+        word spacing + wraping + white space
+*/
+.text-spacing{
+    width: 200px;
+    letter-spacing: 2px;
+    text-indent: 5px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

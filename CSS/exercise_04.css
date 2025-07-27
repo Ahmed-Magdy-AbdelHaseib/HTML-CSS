@@ -1,0 +1,25 @@
+.parent .child span{
+    color: red;
+}
+
+.parent span{
+    color: blue;
+}
+.parent p, .title{
+    color: green;
+}
+
+.first, .second, .third, .fourth{
+    color: white;
+    background-color: rgb(72, 32, 32);
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+
+}
+.fourth{
+    height: 50px;
+    overflow-x: hidden;
+}

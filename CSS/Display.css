@@ -1,0 +1,40 @@
+/* Block Element 
+    - full width if no width
+    - add newline before and after it
+    - respect width, height, margin and padding
+*/
+
+div{
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 8px;
+}
+
+/* Inline Element 
+    - Does not respect width or height
+    - does not add newline before or after it & allow elements before and after 
+    - respect margin and padding [just left & right]
+*/
+span{
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 8px;
+}
+
+/* Inline-Block Element 
+    - respect width or height
+    - does not add newline before or after it & allow elements before and after 
+    - respect margin and padding 
+*/
+.Inline-Block{
+    display: inline-block;
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 8px;
+}

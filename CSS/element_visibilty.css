@@ -1,0 +1,12 @@
+.div1{
+    background-color: red;
+    margin: 10px 0px;
+    /* display: none; */
+    visibility: hidden;
+
+}
+
+.div2{
+    background-color: green;
+    margin: 10px 0px;
+}

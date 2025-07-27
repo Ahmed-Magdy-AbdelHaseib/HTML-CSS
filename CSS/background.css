@@ -1,0 +1,11 @@
+div {
+    background-color: red;
+    background-color: rgb(0 0 0 / 50%);
+    background-color: #FF0000;
+    background-image: url("../img/first.jfif");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    background-position: center; */
+    /* background-size: cover; */
+    background-size: contain;
+}
