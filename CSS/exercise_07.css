@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+
+.parent {
+    background-color: aliceblue;
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.first, .second, .third, .fourth {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    
+}
+
+    
+
+
+.first {
+    width: calc(1000px - 30px);
+    float: none;
+}
+.second {
+    width: calc((1000px - 60px) / 3);
+}
+.third {
+    width: calc((1000px - 45px) / 2);
+}
+.fourth {
+    margin-bottom: 15px;
+    width: calc((1000px - 75px) / 4);
+}
+.clear {
+    clear: both;
+}
+
+
+.Box {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgba(179 179 179 / 1);
+    color: black;
+}
+
+.one {
+    background-color: rgba(179 179 179 / 0.1);
+}
+.two {
+    opacity: 0.1;
+ }
