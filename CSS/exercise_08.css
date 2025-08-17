@@ -99,3 +99,66 @@
     left: calc(440px - (20px / 2));
     border-left: 2px solid #f44336;
 }
+
+.list1, .list2, .list3 {
+    width: 200px;
+    margin: auto;
+    list-style: none;
+    background-color: #eeeeee;
+    padding: 10px;
+
+}
+.list1 ol {
+    list-style: decimal outside;
+    counter-reset: ol 10
+}
+.list1 ol li {
+    background-color: white;
+    margin: 5px;
+
+}
+.list2 ol {
+    list-style: upper-roman outside;
+    counter-reset: ol 10;
+}
+.list2 ol li {
+    background-color: white;
+    margin: 5px;
+}
+.list3 ul {
+    list-style: circle outside
+    
+}
+.list3 ul li {
+    background-color: white;
+    margin: 5px;
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border-spacing: 3px;
+    text-align: center;
+}
+
+table thead {
+    background-color: #404040;
+    color: white;
+    height: 30px;
+}
+table tbody {
+    background-color: #eeeeee;
+}
+
+.delete {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+
+}
+.view {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+}
