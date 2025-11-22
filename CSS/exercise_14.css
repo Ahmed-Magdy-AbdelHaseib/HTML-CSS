@@ -1,0 +1,247 @@
+
+.grid {
+    display: grid;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    grid-template-columns: repeat(3, calc(780px/3));
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+}
+
+.grid div {
+    background-color: #607d8b;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.layout {
+
+    margin: 10px 0;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "header header header" 
+                         "section section aside" 
+                         "footer footer footer";
+    
+
+}
+
+.layout header {
+    grid-area: header;
+    background-color: #03a9f4;
+}
+.layout header::after {
+    content: "Header";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 10px;
+
+}   
+.layout section {
+    grid-area: section;
+    background-color: #ff5722;
+}
+.layout section::after {
+    content: "Section";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc(100% + 10px);
+    padding: 0 10px;
+}
+
+.layout aside {
+    grid-area: aside;
+    background-color: #607d8b;
+}
+
+.layout aside::after {
+    content: "Aside";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc(100% + 10px);
+    padding: 0 10px;
+}
+.layout footer {
+    grid-area: footer;
+    background-color: #009688;
+}
+.layout footer::after {
+    content: "Footer";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    align-content: space-between;
+
+}
+.grid div {
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+}
+.grid2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+
+}
+
+.grid2 div {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+
+}
+.grid3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+}
+.grid3 div {
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+
+}
+
+.grid3 .eight {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+}
+.grid3 .two {
+    grid-column: 1 / span 2;
+    grid-row: 2/3;
+}
+.grid3 .three {
+    grid-column: 3 / span 1;
+    grid-row: 2 / 3;
+}
+.grid3 .four {
+    grid-column: 1 / span 1;
+    grid-row: 3/4;
+}
+.grid3 .five {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 3;
+}
+.grid3 .six {
+    grid-column: 1 / span 1;
+    grid-row: 4/5;
+}
+.grid3 .seven {
+    grid-column: 1 / span 1;
+    grid-row: 5/6;
+}
+.grid3 .one {
+    grid-column: span 3;
+}
+
+.challenge {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px auto;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) auto;
+    gap: 3px;
+}
+.challenge div::after {
+    content: "";
+    background-color: #ff5722;
+    width: 100%;
+    height: 1px;
+}
+
+.challenge .OM {
+    grid-column: 1 / span 2;
+
+}
+.challenge .AS {
+    grid-column: 3 / span 1;
+}
+.challenge SN {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 4;
+    background-color: black;
+    color: white;
+}
+.challenge .MI {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+.challenge .MM {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background-color: black;
+    color: white;
+}
+.challenge .EE {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+.challenge .MS {
+    grid-column: 1 / span 1;
+}
+.challenge .IS {
+    grid-column: 2 / span 1;
+    background-color: black;
+    color: white;
+}
+.challenge .GS {
+    grid-column: 3 / span 1;
+}
+.challenge .ES {
+    grid-column: 4 / span 1;
+}

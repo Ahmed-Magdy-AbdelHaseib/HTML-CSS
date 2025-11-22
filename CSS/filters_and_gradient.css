@@ -1,0 +1,94 @@
+.first div{
+    width: 600px;
+    background-color: #eeeeee;
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    border-left:10px solid #f44336;
+    border-right: 10px solid #673ab7;
+    position: relative;
+}
+.first div::first-letter{
+    color: #f44336;
+    font-size: 120px;
+}
+.first div::before{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 20%, #00bcd4 20%, #00bcd4 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%, #673ab7 100%);    top: 0;
+    left: 0;
+}
+.first div::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 20%, #00bcd4 20%, #00bcd4 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%, #673ab7 100%);
+    bottom: 0;
+    left: 0;
+}
+
+
+.second .div1{
+width: 600px;
+    height: 100px;
+    background-color: #eeeeee;
+    font-size: 24px;
+    margin: 20px auto;
+    caret-color: #f44336;
+    line-height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+.second .div2{
+    width: 600px;
+    height: 100px;
+    background-color: #eeeeee;
+    font-size: 24px;
+    margin: 20px auto;
+    caret-color: #f44336;
+    line-height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+.second .div3{
+    width: 600px;
+    height: 100px;
+    background-color: #eeeeee;
+    color: #989898
+    font-size: 24px;
+    margin: 20px auto;
+    caret-color: #f44336;
+    line-height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+.second .div1::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 50% , #009688 50%, #009688 100%);
+}
+.second .div2::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 50% , #009688 50%, #009688 100%);
+}
+.second .div3::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 50% , #009688 50%, #009688 100%);
+}

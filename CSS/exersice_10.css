@@ -1,0 +1,172 @@
+.first div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: #eeee;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #000, 7px 7px 0 0 #2196f3, -7px -7px 0 0 #e91e63;
+    counter-increment: box-number;
+    position: relative;
+}
+
+.first div::before {
+    content: counter(box-number);
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    top: -10px;
+    left: -10px;
+}
+
+.first div::after {
+content: "Element";
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    background-color: #eeeeee;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    top: -10px;
+    left: -30px;
+}
+
+.second div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #efefef;
+    border-top-left-radius: 10px 20px;
+    border-bottom-right-radius: 20px 10px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: inset 0 0 8px 2px #000;
+}
+
+.third {
+    width: 550px;
+    height: 300px;
+    margin: auto;
+}
+
+.third div {
+    display: inline-block;
+}
+
+.third .separator {
+    width: 0px;
+    margin: 20px 0px;
+    height: 100%;
+    border-left: 1px solid #03a9f4;
+    position: relative;
+}
+
+.free, .paid {
+    width: 45%;
+    margin: 20px 10px;
+    height: 100%;
+    background-color: #efefef;
+    position: relative;
+}
+
+
+.free::before {
+    content: "Free";
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    top: -50px;
+    left: -100px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+.paid::before {
+    content: "$300";
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    top: -50px;
+    left: -100px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.free::after {
+    content: "Basic";
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    background-color: #03a9f4;
+    color: white;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    top: -100px;
+    left: -90px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0px black;
+}
+.paid::after {
+    content: "Pro";
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    background-color: #03a9f4;
+    color: white;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    top: -100px;
+    left: -90px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0px black;
+}
+
+.separator::after {
+content: "Or";
+    display: flex
+;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #03a9f4;
+    color: white;
+    position: absolute;
+    margin-left: 50%;
+    top: 150px;
+    left: -12px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 50%;
+}
